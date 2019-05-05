@@ -12,6 +12,10 @@
 		9027904C227F0B6700030719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9027904A227F0B6700030719 /* Main.storyboard */; };
 		9027904E227F0B6800030719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9027904D227F0B6800030719 /* Assets.xcassets */; };
 		90279051227F0B6800030719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9027904F227F0B6800030719 /* LaunchScreen.storyboard */; };
+		90279059227F0C5200030719 /* MyModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90279058227F0C5200030719 /* MyModuleView.xib */; };
+		9027905B227F0C6B00030719 /* MyModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027905A227F0C6B00030719 /* MyModuleView.swift */; };
+		90279061227F1A0800030719 /* MyModuleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90279060227F1A0800030719 /* MyModuleModuleFactory.swift */; };
+		90279063227F246900030719 /* UIView+InstantiateNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90279062227F246900030719 /* UIView+InstantiateNib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9027904D227F0B6800030719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90279050227F0B6800030719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90279052227F0B6800030719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90279058227F0C5200030719 /* MyModuleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyModuleView.xib; sourceTree = "<group>"; };
+		9027905A227F0C6B00030719 /* MyModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModuleView.swift; sourceTree = "<group>"; };
+		90279060227F1A0800030719 /* MyModuleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModuleModuleFactory.swift; sourceTree = "<group>"; };
+		90279062227F246900030719 /* UIView+InstantiateNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+InstantiateNib.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				90279046227F0B6700030719 /* AppDelegate.swift */,
-				90279048227F0B6700030719 /* ViewController.swift */,
-				9027904A227F0B6700030719 /* Main.storyboard */,
+				9027905C227F0C7600030719 /* MyModule */,
+				9027905D227F0C9200030719 /* View */,
 				9027904D227F0B6800030719 /* Assets.xcassets */,
 				9027904F227F0B6800030719 /* LaunchScreen.storyboard */,
 				90279052227F0B6800030719 /* Info.plist */,
+				90279062227F246900030719 /* UIView+InstantiateNib.swift */,
 			);
 			path = LoadViewModule;
+			sourceTree = "<group>";
+		};
+		9027905C227F0C7600030719 /* MyModule */ = {
+			isa = PBXGroup;
+			children = (
+				90279060227F1A0800030719 /* MyModuleModuleFactory.swift */,
+				90279058227F0C5200030719 /* MyModuleView.xib */,
+				9027905A227F0C6B00030719 /* MyModuleView.swift */,
+			);
+			path = MyModule;
+			sourceTree = "<group>";
+		};
+		9027905D227F0C9200030719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90279048227F0B6700030719 /* ViewController.swift */,
+				9027904A227F0B6700030719 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90279059227F0C5200030719 /* MyModuleView.xib in Resources */,
 				90279051227F0B6800030719 /* LaunchScreen.storyboard in Resources */,
 				9027904E227F0B6800030719 /* Assets.xcassets in Resources */,
 				9027904C227F0B6700030719 /* Main.storyboard in Resources */,
@@ -135,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9027905B227F0C6B00030719 /* MyModuleView.swift in Sources */,
 				90279049227F0B6700030719 /* ViewController.swift in Sources */,
 				90279047227F0B6700030719 /* AppDelegate.swift in Sources */,
+				90279063227F246900030719 /* UIView+InstantiateNib.swift in Sources */,
+				90279061227F1A0800030719 /* MyModuleModuleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

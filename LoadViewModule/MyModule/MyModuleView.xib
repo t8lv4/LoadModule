@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewModuleView" id="iN0-l3-epB" customClass="MyModuleView" customModule="LoadViewModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-pV-M5D" userLabel="My Module Label">
+                    <rect key="frame" x="215" y="182.5" width="204" height="135"/>
+                    <color key="backgroundColor" red="0.40593403579999998" green="0.55087077620000002" blue="0.76538610460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="80t-kT-cQT"/>
+                        <constraint firstAttribute="width" constant="204" id="Ywv-5x-uqG"/>
+                        <constraint firstAttribute="width" secondItem="Nq7-pV-M5D" secondAttribute="height" multiplier="68:45" id="yW0-7X-fak"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nq7-pV-M5D" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="SNt-2K-KVp"/>
+                <constraint firstItem="Nq7-pV-M5D" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Scg-tT-ts0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="myModuleLabel" destination="Nq7-pV-M5D" id="9vo-ZC-EPB"/>
+            </connections>
+            <point key="canvasLocation" x="260.80000000000001" y="-35.982008995502248"/>
+        </view>
+    </objects>
+</document>
