@@ -1,5 +1,5 @@
 //
-//  ViewModuleModuleFactory.swift
+//  MyModuleModuleFactory.swift
 //  LoadViewModule
 //
 //  Created by Morgan on 05/05/2019.
@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class ViewModuleModuleFactory {
+protocol MyModuleModuleFactoryProtocol: class {
+  func makeView() -> MyModuleView
+}
+
+class MyModuleModuleFactory: MyModuleModuleFactoryProtocol {
     
     func makeView() -> MyModuleView {
         let view = MyModuleView.instanciateFromNib()

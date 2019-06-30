@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  LoadViewModule
 //
 //  Created by Morgan on 05/05/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     // MARK: - Outlets
 
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     // MARK: - Properties
     
-
+  var myModuleModuleFactory: MyModuleModuleFactoryProtocol!
 
     // MARK: - Life Cycle
 
@@ -28,9 +28,8 @@ class ViewController: UIViewController {
     // MARK: - Private
 
     private func setupMyModuleView() {
-        let viewModule = ViewModuleModuleFactory().makeView()
-        viewModule.configure()
-        stackViewContainer.addArrangedSubview(viewModule)
+        let myModuleView = myModuleModuleFactory.makeView()
+        myModuleView.configure()
+        stackViewContainer.addArrangedSubview(myModuleView)
     }
 }
-

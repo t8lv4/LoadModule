@@ -9,13 +9,20 @@
 import Foundation
 import UIKit
 
-class MyModuleView: UIView {
+protocol Configurable {
+  func configure()
+}
+
+class MyModuleView: UIView & Configurable {
 
     // MARK: - Outlets
 
     @IBOutlet weak var myModuleLabel: UILabel!
+}
 
-    func configure() {
-        myModuleLabel.text = "it's loaded!"
-    }
+extension MyModuleView {
+
+  func configure() {
+    myModuleLabel.text = "it's loaded!"
+  }
 }
